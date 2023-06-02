@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "anf-footer-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/anfFooter/AnfFooterWebPart.js",
+          "manifest": "./src/webparts/anfFooter/AnfFooterWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "AnfFooterWebPartStrings": "lib/webparts/anfFooter/loc/{locale}.js"
+  }
+}
