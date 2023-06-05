@@ -2,7 +2,7 @@ import { WebPartContext } from '@microsoft/sp-webpart-base';
 import { ISearchResult } from '@pnp/sp/search';
 
 
-export interface IFooterProps {
+export interface IFooterContextProps {
   wpContext: WebPartContext;
 }
 

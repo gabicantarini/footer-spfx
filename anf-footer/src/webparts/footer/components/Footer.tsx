@@ -46,16 +46,16 @@ export const Footer: React.FunctionComponent = () => {
     }, 200);
 
     sp.site.rootWeb
-      .getList(`${context.wpContext.pageContext.site.serverRelativeUrl}Lists/ANF_Footer`)
-      .select('Title', 'ANF_Description', 'ANF_Group', 'ANF_Link')
+      .getList(`${context.wpContext.pageContext.site.serverRelativeUrl}Lists/Test_Footer`)
+      .select('Title', 'Test_Description', 'Test_Group', 'Test_Link')
       .items.get()
       .then((spItems) => {
         const listItems: IListItemFooter[] = spItems.map((item) => {
           return {
             title: item.Title,
-            description: item.ANF_Description,
-            group: item.ANF_Group,
-            link: item.ANF_Link ? item.ANF_Link.Url : ''
+            description: item.Test_Description,
+            group: item.Test_Group,
+            link: item.Test_Link ? item.Test_Link.Url : ''
           };
         });
 
@@ -97,7 +97,7 @@ export const Footer: React.FunctionComponent = () => {
                 })}
               <div className='helpSection'>
                 <h2>Ajude-nos a melhorar!</h2>
-                <p>A sua opinião é importante. Partilhe os seus comentários sobre o portal ANFOnline.</p>
+                <p>Deixa a sua opinião.</p>
                 <div className='helpSection-button'>
                   <i className='fal fa-envelope'></i>
                   <span>Enviar</span>
@@ -107,14 +107,14 @@ export const Footer: React.FunctionComponent = () => {
           </div>
         </div>
         <div className='footer-image-mobile'>
-          <img src='/Style%20Library/ANF/static/images/footer/footer_image_mobile.svg' alt='footer bg' />
+          <img src='' alt='footer bg' />
         </div>
         <div className='footer-copyright'>
           ©{getCurrentYear()} ASSOCIAÇÃO NACIONAL DAS FARMÁCIAS. Todos os direitos reservados.
         </div>
       </div>
       <div className='footer-image-desktop'>
-        <img src='/Style%20Library/ANF/static/images/footer/footer_image_desktop.svg' alt='footer bg' />
+        <img src='' alt='footer bg' />
       </div>
       <div
         className={`footer-go-top${hide ? ' hide' : ''}${isAside ? ' isAside' : ''}`}

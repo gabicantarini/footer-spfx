@@ -1,5 +1,5 @@
 import { createContext } from 'react';
-import { IFooterProps } from './IFooterProps';
+import { IFooterContextProps } from './IFooterProps';
 
 /**
  * @summary Para usar o contexto, declarar no componente:
