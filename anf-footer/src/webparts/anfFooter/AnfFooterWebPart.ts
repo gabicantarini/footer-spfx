@@ -13,6 +13,7 @@ import { IAnfFooterProps } from './components/IAnfFooterProps';
 import { IAnfFooterState } from './components/IAnfFooterState';
 import { sp } from '@pnp/sp';
 
+
 export interface IAnfFooterWebPartProps {
   helpSectionTitle: string;
   helpSectionText: string;
