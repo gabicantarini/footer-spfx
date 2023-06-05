@@ -4,7 +4,7 @@ import '@pnp/sp/lists';
 import '@pnp/sp/webs';
 import * as React from 'react';
 import { useContext, useEffect, useState } from 'react';
-import { IBlockedItem, IListItemFooter } from './Entities';
+import { IBlockedItem, IListItemFooter } from './FooterEntities';
 import './Footer.scss';
 
 export const Footer: React.FunctionComponent = () => {
@@ -12,7 +12,7 @@ export const Footer: React.FunctionComponent = () => {
   const [hide, setHide] = useState<boolean>(true);
   const [isAside, setIsAside] = useState<boolean>(false);
 
-  //const context: IFooterProps = useContext("");
+  const context: IFooterProps = useContext(WebPartContext);
   const s4WorkspaceContainer: HTMLDivElement = document.getElementById('s4-workspace') as HTMLDivElement;
 
   const getCurrentYear: () => number = (): number => {

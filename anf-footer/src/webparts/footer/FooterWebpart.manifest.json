@@ -16,7 +16,7 @@
   "preconfiguredEntries": [
     {
       "groupId": "5c03119e-3074-46fd-976b-c60198311f70", // Other
-      "group": { "default": "ANF" },
+      "group": { "default": "Footer" },
       "title": { "default": "Rodapé" },
       "description": { "default": "webpart que apresenta o rodapé" },
       "officeFabricIconFontName": "Page",
